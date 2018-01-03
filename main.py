@@ -13,7 +13,7 @@ bot = telepot.Bot(TOKEN)
 # logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 logging.debug(bot.getMe())
 pprint(bot.getMe())
-bot = DaVinciCode(TOKEN, [], player)
+bot = DaVinciCode(TOKEN, games=[], players=player)
 MessageLoop(bot).run_as_thread()
 while 1:
     time.sleep(10)
